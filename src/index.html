@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__content">
+      <a href="#" class="header__logo"><img alt="логотип" src="./img/logo.svg" class="header__img" /></a>
+      <div class="header__wrapper flex">
+        <a class="header__link" href="#">Каталог</a>
+        <a class="header__link" href="#">Активация</a>
+        <a class="header__link" href="#">Вход</a>
+      </div>
+    </div>
+  </header>
+  <nav class="navigation container">
+    <h2 class="navigation__title">Витрина</h2>
+    <form class="navigation__form flex">
+      <div class="navigation__wrapper">
+        <select data-id="subject" class="navigation__select js-selector">
+          <option value="">Все предметы</option>
+          <option value="Алгебра">Алгебра</option>
+          <option value="Английский">Английский</option>
+          <option value="Биология">Биология</option>
+          <option value="География">География</option>
+          <option value="Геометрия">Геометрия</option>
+        </select>
+        <select data-id="genre" class="navigation__select js-selector">
+          <option value="">Все жанры</option>
+          <option value="Демо">Демо</option>
+          <option value="Задачник">Задачник</option>
+          <option value="Подготовка к ВПР">Подготовка к ВПР</option>
+          <option value="Подгтовка к ЕГЭ">Подгтовка к ЕГЭ</option>
+          <option value="Рабочая тетрадь">Рабочая тетрадь</option>
+        </select>
+        <select data-id="grade" class="navigation__select js-selector">
+          <option value="">Все классы</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+        </select>
+      </div>
+      <div class="navigation__group">
+        <input class="navigation__input js-input" placeholder="Поиск" />
+        <button class="navigation__btn js-btn">
+          <img src="./img/search.png" alt="поиск" class="navigation__img" />
+        </button>
+      </div>
+    </form>
+  </nav>
+  <main class="container">
+    <select data-id="currency" class="change__currency js-currency">
+      <option value="рубли">Рубли</option>
+      <option value="бонусы">Бонусы</option>
+    </select>
+    <ul class="flex cardlist js-cardlist">
+    </ul>
+  </main>
+</body>
+
+</html>
